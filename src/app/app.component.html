@@ -1,11 +1,11 @@
 <div class="container" *ngIf="prayerData">
     <div class="header">
         <h1>Prayer Times</h1>
-        <p>Get your current location prayer time.</p>
+        <p>Get prayer times by city.</p>
         <form #form="ngForm" (submit)="onSubmit()">
-            <input type="text" placeholder="City" name="city" [(ngModel)]="cityName">
-            <input type="text" placeholder="Country" name="country" [(ngModel)]="countryName">
-            <button type="submit">Submit</button>
+            <input class="br-0" type="text" placeholder="City" name="city" [(ngModel)]="cityName" maxlength="10">
+            <input class="bl-0" type="text" placeholder="Country" name="country" [(ngModel)]="countryName" maxlength="10">
+            <button class="search-btn" type="submit">Find</button>
         </form>
     </div>
     

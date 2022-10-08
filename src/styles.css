@@ -24,16 +24,39 @@ body{
 }
 
 input{
-    width: 300px;
+    width: 200px;
     line-height: 40px;
     padding: 0 15px;
-    border-radius: 20px;
+    /* border-radius: 20px; */
     text-align: center;
-    margin: 15px 15px;
+    margin: 15px 0;
     border: 2px solid rgb(109,39,40, 0.8);
     font-size: 16px;
     color: rgb(109,39,40);
+    font-family: 'Signika', sans-serif;    
+}
+.search-btn{
+    line-height: 40px;
+    color: white;
+    font-size: 16px;
     font-family: 'Signika', sans-serif;
+    padding: 0 30px;
+    outline: 0;
+    border: 0;
+    background: rgb(109,39,40);
+    border: 2px solid rgb(109,39,40, 0.8);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    cursor: pointer;
+}
+
+.br-0{
+    border-right: 1px solid rgb(109,39,40, 0.2) !important;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.bl-0{
+    border-left: 1px solid rgb(109,39,40, 0.2) !important;
 }
 
 input:focus{
