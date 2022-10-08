@@ -70,6 +70,7 @@ input:focus{
 .wrapper .left img{
     width: 100%;
     z-index: 1;
+    border-radius: 20px;
 }
 
 .wrapper .right .times{
