@@ -18,6 +18,30 @@ body{
     text-align: center;
 }
 
+.header{
+    font-size: 25px;
+    color: rgb(109,39,40);
+}
+
+input{
+    width: 500px;
+    line-height: 40px;
+    padding: 0 15px;
+    border-radius: 20px;
+    text-align: center;
+    margin: 15px 0;
+    border: 2px solid rgb(109,39,40, 0.8);
+    font-size: 16px;
+    color: rgb(109,39,40);
+    font-family: 'Signika', sans-serif;
+}
+
+input:focus{
+    border: 2px solid rgb(109,39,40, 0.8);
+    color: rgb(109,39,40);
+    outline: 0;
+}
+
 .wrapper{
     width: 1200px;
     height: 600px;
@@ -35,12 +59,15 @@ body{
     z-index: 0;
 }
 
+.wrapper .left .title-text{
+    font-size: 30px;
+    color: rgb(109,39,40);
+}
+.wrapper .left .subTitle-text{
+    font-size: 20px;
+    color: rgb(109,39,40);
+}
 .wrapper .left img{
-    /* background-size: contain; */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     width: 100%;
     z-index: 1;
 }
@@ -58,7 +85,7 @@ body{
 .wrapper .right .times .salah-time{
     height: 60px;
     width: 70%;
-    background: rgb(109,39,40, 0.2);
+    background: rgb(109,39,40, 0.15);
     border: 2px solid rgb(109,39,40, 0.8);
     border-radius: 8px;
     font-size: 20px;
