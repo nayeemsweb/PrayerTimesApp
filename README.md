@@ -1,27 +1,58 @@
-# PrayerTimesApp
+# Prayer Times App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.0.
+Prayer Times App is a fun project. Purpose of this project is to learn and implement Angular. We used `Angular CLI` to create different componets, services amd models. The prayer times data is fetched from [Prayer Times API](https://aladhan.com/prayer-times-api).
 
-## Development server
+## Demo
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+<img src="./utilities/images/PrayerTimesDemo.png">
 
-## Code scaffolding
+</br>
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Installation
 
-## Build
+**Step(1):** Clone the project
+```
+https://github.com/nayeemsweb/PrayerTimesApp.git
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+**Step(2):** Enter into the project directory
+```
+cd PrayerTimesApp
+```
 
-## Running unit tests
+**Step(3):** Open `Terminal` and run the project
+```
+ng serve -o
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Pre-requisites
 
-## Running end-to-end tests
+⚠️ Pre-requisites: Must be installed on your machine - 
+- [Node Js](https://nodejs.org/en/)
+- [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+_`npm` is included with Node.js installation. After you install Node.js, verify `npm` installation by writing the following command in terminal or command prompt._
+```
+npm -v
+```
+- [Angular](https://angular.io/)
+- [TypeScript](https://www.typescriptlang.org/)
 
-## Further help
+## API Reference
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+We used the [Prayer Times API](https://aladhan.com/prayer-times-api) for fetching the data based on `city` and `country`.
+
+🌎 **Example Request:** [http://api.aladhan.com/v1/timingsByCity?city=Dhaka&country=Bangladesh](http://api.aladhan.com/v1/timingsByCity?city=Dhaka&country=Bangladesh)
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `city`      | `string` | **Required**. City of the Prayer Times to fetch |
+| `country`      | `string` | **Required**. Country of the Prayer Times to fetch |
+
+## Support
+
+❤️ If you do like my work, hit the ⭐️ button above. ❤️
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)

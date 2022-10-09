@@ -1,3 +1,88 @@
-
+<div class="container" *ngIf="prayerData">
+    <div class="header">
+        <h1>Prayer Times</h1>
+        <p>Get prayer times by city.</p>
+        <form #form="ngForm" (submit)="onSubmit()">
+            <input class="br-0" type="text" placeholder="City" 
+            name="city" [(ngModel)]="cityName" maxlength="10" required>
+            
+            <input class="bl-0" type="text" placeholder="Country" 
+            name="country" [(ngModel)]="countryName" maxlength="10" required>
+            <button class="search-btn" type="submit">Find</button>
+        </form>
+    </div>
+    
+    <div class="wrapper">
+        <div class="left">        
+            <img src="assets/kaba.jpg" alt="">
+            <!-- <p class="title-text">Prayer Times in <strong></strong></p> -->
+            <p class="subTitle-text">{{ prayerData.data.date.gregorian.weekday.en }}, {{ prayerData.data.date.readable }}</p>
+            <p class="subTitle-text">{{ prayerData.data.date.hijri.weekday.en }}, 
+                {{ prayerData.data.date.hijri.day }}                 
+                {{ prayerData.data.date.hijri.month.en }} 
+                {{ prayerData.data.date.hijri.year }} AH </p>
+        </div>
+        <div class="right">
+            <div class="times">
+                <div class="salah-time margin-2">
+                    <div class="name">
+                        <p>Fajr</p>
+                    </div>
+                    <div class="waqt">
+                        {{prayerData.data.timings.Fajr}} AM
+                    </div>
+                </div>
+                <div class="salah-time margin-1">
+                    <div class="name">
+                        <p>Sunrise</p>
+                    </div>
+                    <div class="waqt">
+                        {{ prayerData.data.timings.Sunrise }} AM
+                    </div>
+                </div>
+                <div class="salah-time margin-2">
+                    <div class="name">
+                        <p>Dhuhr</p>
+                    </div>
+                    <div class="waqt">
+                        {{ prayerData.data.timings.Dhuhr }} PM
+                    </div>
+                </div>
+                <div class="salah-time margin-1">
+                    <div class="name">
+                        <p>Asr</p>
+                    </div>
+                    <div class="waqt">
+                        {{ prayerData.data.timings.Asr }} PM
+                    </div>
+                </div>
+                <div class="salah-time margin-2">
+                    <div class="name">
+                        <p>Sunset</p>
+                    </div>
+                    <div class="waqt">
+                        {{ prayerData.data.timings.Sunset }} PM
+                    </div>
+                </div>
+                <div class="salah-time margin-1">
+                    <div class="name">
+                        <p>Maghrib</p>
+                    </div>
+                    <div class="waqt">
+                        {{ prayerData.data.timings.Maghrib }} PM
+                    </div>
+                </div>
+                <div class="salah-time margin-2">
+                    <div class="name">
+                        <p>Isha'a</p>
+                    </div>
+                    <div class="waqt">
+                        {{ prayerData.data.timings.Isha }} PM
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <router-outlet></router-outlet>
