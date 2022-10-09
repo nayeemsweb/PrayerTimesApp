@@ -42,7 +42,6 @@ input{
     font-family: 'Signika', sans-serif;
     padding: 0 30px;
     outline: 0;
-    border: 0;
     background: rgb(109,39,40);
     border: 2px solid rgb(109,39,40, 0.8);
     border-top-right-radius: 20px;
